@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F00FA321A9E8345003AFF55 /* PuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F00FA311A9E8345003AFF55 /* PuzzleView.m */; };
 		7F07CE1F1A9E7F5C00F27255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07CE1E1A9E7F5C00F27255 /* main.m */; };
 		7F07CE221A9E7F5C00F27255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07CE211A9E7F5C00F27255 /* AppDelegate.m */; };
 		7F07CE251A9E7F5C00F27255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07CE241A9E7F5C00F27255 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F00FA301A9E8345003AFF55 /* PuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleView.h; sourceTree = "<group>"; };
+		7F00FA311A9E8345003AFF55 /* PuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleView.m; sourceTree = "<group>"; };
 		7F07CE191A9E7F5C00F27255 /* IOSSudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F07CE1D1A9E7F5C00F27255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F07CE1E1A9E7F5C00F27255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			children = (
 				7F07CE201A9E7F5C00F27255 /* AppDelegate.h */,
 				7F07CE211A9E7F5C00F27255 /* AppDelegate.m */,
+				7F00FA301A9E8345003AFF55 /* PuzzleView.h */,
+				7F00FA311A9E8345003AFF55 /* PuzzleView.m */,
 				7F07CE231A9E7F5C00F27255 /* ViewController.h */,
 				7F07CE241A9E7F5C00F27255 /* ViewController.m */,
 				7F07CE261A9E7F5C00F27255 /* Main.storyboard */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F00FA321A9E8345003AFF55 /* PuzzleView.m in Sources */,
 				7F07CE251A9E7F5C00F27255 /* ViewController.m in Sources */,
 				7F07CE221A9E7F5C00F27255 /* AppDelegate.m in Sources */,
 				7F07CE1F1A9E7F5C00F27255 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				7F07CE3E1A9E7F5C00F27255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F07CE3F1A9E7F5C00F27255 /* Build configuration list for PBXNativeTarget "IOSSudokuTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				7F07CE411A9E7F5C00F27255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
