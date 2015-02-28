@@ -10,4 +10,7 @@
 
 @interface PuzzleView : UIView
 
+@property (assign, nonatomic) NSInteger selectedRow;
+@property (assign, nonatomic) NSInteger selectedCol;
+
 @end
