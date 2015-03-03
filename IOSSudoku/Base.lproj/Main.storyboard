@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,8 +24,30 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                         <color key="backgroundColor" red="0.18817582866532917" green="0.47044849838074221" blue="0.84775489267676774" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" secondItem="e7K-eD-gue" secondAttribute="height" multiplier="1:1" priority="750" id="0Xo-BW-9sg"/>
                                             <constraint firstAttribute="height" constant="250" id="VPs-gZ-qHr"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="0Xo-BW-9sg"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="0Xo-BW-9sg"/>
+                                                <exclude reference="VPs-gZ-qHr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="0Xo-BW-9sg"/>
+                                                <exclude reference="VPs-gZ-qHr"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="tapGestureRecognizer" destination="uDb-ed-dFa" id="tcp-1X-xWb"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-VQ-pJh" userLabel="ButtonView">
                                         <rect key="frame" x="0.0" y="250" width="600" height="330"/>
@@ -33,14 +56,37 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Kon-VQ-pJh" firstAttribute="leading" secondItem="e7K-eD-gue" secondAttribute="trailing" id="0up-Lh-X3A"/>
                                     <constraint firstItem="e7K-eD-gue" firstAttribute="leading" secondItem="JQL-Dh-VYn" secondAttribute="leading" id="9jT-XO-cS1"/>
                                     <constraint firstItem="Kon-VQ-pJh" firstAttribute="leading" secondItem="JQL-Dh-VYn" secondAttribute="leading" id="ggS-8Y-ddP"/>
+                                    <constraint firstItem="Kon-VQ-pJh" firstAttribute="top" secondItem="JQL-Dh-VYn" secondAttribute="top" id="ppb-S4-Zjt"/>
                                     <constraint firstAttribute="bottom" secondItem="Kon-VQ-pJh" secondAttribute="bottom" id="r8V-UB-2yL"/>
                                     <constraint firstItem="Kon-VQ-pJh" firstAttribute="top" secondItem="e7K-eD-gue" secondAttribute="bottom" id="s9p-xr-ZPI"/>
+                                    <constraint firstAttribute="bottom" secondItem="e7K-eD-gue" secondAttribute="bottom" id="t9G-Jd-sfJ"/>
                                     <constraint firstItem="e7K-eD-gue" firstAttribute="top" secondItem="JQL-Dh-VYn" secondAttribute="top" id="vTb-Yu-VEo"/>
                                     <constraint firstAttribute="trailing" secondItem="Kon-VQ-pJh" secondAttribute="trailing" id="wcA-VD-wPM"/>
                                     <constraint firstAttribute="trailing" secondItem="e7K-eD-gue" secondAttribute="trailing" id="xS0-iK-2Dd"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="t9G-Jd-sfJ"/>
+                                        <exclude reference="0up-Lh-X3A"/>
+                                        <exclude reference="ppb-S4-Zjt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="t9G-Jd-sfJ"/>
+                                        <exclude reference="xS0-iK-2Dd"/>
+                                        <include reference="0up-Lh-X3A"/>
+                                        <exclude reference="ggS-8Y-ddP"/>
+                                        <include reference="ppb-S4-Zjt"/>
+                                        <exclude reference="s9p-xr-ZPI"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uDb-ed-dFa" appends="YES" id="4Ud-DR-9i9"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -53,7 +99,13 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uDb-ed-dFa">
+                    <connections>
+                        <action selector="handleFingerTap:" destination="e7K-eD-gue" id="mwO-Gu-bw2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="305" y="417"/>
         </scene>
     </scenes>
 </document>
