@@ -18,7 +18,6 @@
 
 @implementation PuzzleView
 
-
 - (IBAction)handleFingerTap:(UIGestureRecognizer*)sender{
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     SudokuPuzzle *puzzle = appDelegate.sudokuPuzzle;

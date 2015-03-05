@@ -48,7 +48,7 @@
                                             <outlet property="tapGestureRecognizer" destination="uDb-ed-dFa" id="tcp-1X-xWb"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-VQ-pJh" userLabel="ButtonView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-VQ-pJh" userLabel="ButtonView" customClass="ButtonView">
                                         <rect key="frame" x="0.0" y="250" width="600" height="330"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp1-iV-h5i">
@@ -148,7 +148,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.30551455481700218" blue="0.34814665278960788" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,6 +194,9 @@
                             <constraint firstItem="JQL-Dh-VYn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ldW-TG-Y6D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonView" destination="Kon-VQ-pJh" id="v8n-Bf-ssj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="uDb-ed-dFa">

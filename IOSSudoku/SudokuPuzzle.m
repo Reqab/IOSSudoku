@@ -11,7 +11,12 @@
 @implementation SudokuPuzzle
 
 -(instancetype)init{
-    return nil;
+    if(self = [super init]){
+        self.numbers = [[NSMutableArray alloc] initWithCapacity:81];
+        for (int i = 0; i < 81; i++)
+            [self.numbers addObject:@" "];
+    }
+    return self;
 }
 
 -(instancetype)initWithContentsOfFile:(NSString*)path{
