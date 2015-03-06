@@ -28,17 +28,16 @@
     const int col = (tapPoint.x - boardSquare .origin.x)/squareSize;
     if(0 <= row && row < 9 && 0 <= col && col < 9){
         if(row != _selectedRow || col != _selectedCol){
-            //if(puzzle != nil && ![puzzle numberIsFixedAtRow:row Column:col]){
+            if(puzzle != nil && ![puzzle numberIsFixedAtRow:row Column:col]){
                 _selectedRow = row;
                 _selectedCol = col;
                 [self setNeedsDisplay];
-            //}
+            }
         }
     }
 }
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
-    NSLog(@"initWithCoder:");
     if(self = [super initWithCoder:aDecoder]){
         _selectedCol = _selectedRow = -1;
     }

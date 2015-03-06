@@ -10,8 +10,6 @@
 
 @interface SudokuPuzzle : NSObject
 
-@property (strong, nonatomic) NSMutableArray *numbers;
-
 -(instancetype)init;
 -(instancetype)initWithContentsOfFile:(NSString*)path;
 -(void)writeToFile:(NSString*)path;
