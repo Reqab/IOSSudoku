@@ -16,8 +16,8 @@
 		7F07CE2D1A9E7F5C00F27255 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F07CE2B1A9E7F5C00F27255 /* LaunchScreen.xib */; };
 		7F07CE391A9E7F5C00F27255 /* IOSSudokuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07CE381A9E7F5C00F27255 /* IOSSudokuTests.m */; };
 		7F14D0931AA7F84B007A2407 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F14D0921AA7F84B007A2407 /* ButtonView.m */; };
-		7F3C7FA11AA53EDA0012BE3F /* simple.plist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F3C7FA01AA53EDA0012BE3F /* simple.plist.txt */; };
-		7F3C7FA31AA53EE50012BE3F /* hard.plist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F3C7FA21AA53EE50012BE3F /* hard.plist.txt */; };
+		7F3C7FA11AA53EDA0012BE3F /* simple.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F3C7FA01AA53EDA0012BE3F /* simple.plist */; };
+		7F3C7FA31AA53EE50012BE3F /* hard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F3C7FA21AA53EE50012BE3F /* hard.plist */; };
 		7F3C7FA61AA542390012BE3F /* SudokuPuzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3C7FA51AA542390012BE3F /* SudokuPuzzle.m */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +49,8 @@
 		7F07CE381A9E7F5C00F27255 /* IOSSudokuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSSudokuTests.m; sourceTree = "<group>"; };
 		7F14D0911AA7F84B007A2407 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
 		7F14D0921AA7F84B007A2407 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
-		7F3C7FA01AA53EDA0012BE3F /* simple.plist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple.plist.txt; sourceTree = "<group>"; };
-		7F3C7FA21AA53EE50012BE3F /* hard.plist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hard.plist.txt; sourceTree = "<group>"; };
+		7F3C7FA01AA53EDA0012BE3F /* simple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = simple.plist; sourceTree = "<group>"; };
+		7F3C7FA21AA53EE50012BE3F /* hard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hard.plist; sourceTree = "<group>"; };
 		7F3C7FA41AA542390012BE3F /* SudokuPuzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuPuzzle.h; sourceTree = "<group>"; };
 		7F3C7FA51AA542390012BE3F /* SudokuPuzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuPuzzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,8 +107,8 @@
 				7F07CE261A9E7F5C00F27255 /* Main.storyboard */,
 				7F07CE291A9E7F5C00F27255 /* Images.xcassets */,
 				7F07CE2B1A9E7F5C00F27255 /* LaunchScreen.xib */,
-				7F3C7FA21AA53EE50012BE3F /* hard.plist.txt */,
-				7F3C7FA01AA53EDA0012BE3F /* simple.plist.txt */,
+				7F3C7FA21AA53EE50012BE3F /* hard.plist */,
+				7F3C7FA01AA53EDA0012BE3F /* simple.plist */,
 				7F07CE1C1A9E7F5C00F27255 /* Supporting Files */,
 			);
 			path = IOSSudoku;
@@ -222,8 +222,8 @@
 			files = (
 				7F07CE281A9E7F5C00F27255 /* Main.storyboard in Resources */,
 				7F07CE2D1A9E7F5C00F27255 /* LaunchScreen.xib in Resources */,
-				7F3C7FA11AA53EDA0012BE3F /* simple.plist.txt in Resources */,
-				7F3C7FA31AA53EE50012BE3F /* hard.plist.txt in Resources */,
+				7F3C7FA11AA53EDA0012BE3F /* simple.plist in Resources */,
+				7F3C7FA31AA53EE50012BE3F /* hard.plist in Resources */,
 				7F07CE2A1A9E7F5C00F27255 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

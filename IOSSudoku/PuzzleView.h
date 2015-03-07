@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SudokuPuzzle.h"
 
 @interface PuzzleView : UIView
 

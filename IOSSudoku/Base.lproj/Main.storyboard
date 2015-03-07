@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="138" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822395956486" green="1" blue="0.97258656115385123" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="2">
+                                                <state key="normal" title="2" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -38,7 +38,7 @@
                                                 <rect key="frame" x="221" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="3">
+                                                <state key="normal" title="3" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -49,7 +49,7 @@
                                                 <rect key="frame" x="304" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="4">
+                                                <state key="normal" title="4" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -60,7 +60,7 @@
                                                 <rect key="frame" x="387" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="5">
+                                                <state key="normal" title="5" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -71,7 +71,7 @@
                                                 <rect key="frame" x="55" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="6">
+                                                <state key="normal" title="6" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -82,7 +82,7 @@
                                                 <rect key="frame" x="55" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="1" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -93,7 +93,7 @@
                                                 <rect key="frame" x="221" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="8">
+                                                <state key="normal" title="8" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -104,7 +104,7 @@
                                                 <rect key="frame" x="304" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="9">
+                                                <state key="normal" title="9" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -115,23 +115,29 @@
                                                 <rect key="frame" x="470" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="✖︎">
+                                                <state key="normal" title="✖︎" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkg-hd-98h"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-0f-koG">
                                                 <rect key="frame" x="470" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="⌘">
+                                                <state key="normal" title="⌘" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="menuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0c6-CK-fAG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-NK-D77">
                                                 <rect key="frame" x="138" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="7">
+                                                <state key="normal" title="7" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -142,7 +148,7 @@
                                                 <rect key="frame" x="387" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="✏︎">
+                                                <state key="normal" title="✏︎" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -150,11 +156,11 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="1" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="e7K-eD-gue" userLabel="PuzzleView" customClass="PuzzleView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
-                                        <color key="backgroundColor" red="0.18817582866532917" green="0.47044849838074221" blue="0.84775489267676774" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="1" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="e7K-eD-gue" secondAttribute="height" multiplier="1:1" priority="750" id="0Xo-BW-9sg"/>
                                             <constraint firstAttribute="height" constant="250" id="VPs-gZ-qHr"/>
@@ -239,4 +245,7 @@
             <point key="canvasLocation" x="305" y="417"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="buttonbackground" width="288" height="288"/>
+    </resources>
 </document>

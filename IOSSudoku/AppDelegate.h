@@ -14,6 +14,8 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) SudokuPuzzle *sudokuPuzzle;
 
+- (NSString*)randomSimpleGame;
+- (NSString*)randomHardGame;
 
 @end
 

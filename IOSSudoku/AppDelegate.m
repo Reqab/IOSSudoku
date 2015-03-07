@@ -14,6 +14,21 @@
 
 @implementation AppDelegate
 
+- (NSString*)randomSimpleGame{
+    NSString *fileName = [[NSBundle mainBundle] pathForResource:@"simple" ofType:@"plist"];
+    
+    NSArray *games = [NSArray arrayWithContentsOfFile:fileName];
+    NSString *game = [games objectAtIndex:arc4random() % [games count]];
+    return game;
+}
+
+- (NSString*)randomHardGame{
+    NSString *fileName = [[NSBundle mainBundle] pathForResource:@"hard" ofType:@"plist"];
+    
+    NSArray *games = [NSArray arrayWithContentsOfFile:fileName];
+    NSString *game = [games objectAtIndex:arc4random() % [games count]];
+    return game;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

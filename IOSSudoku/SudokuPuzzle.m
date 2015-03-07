@@ -39,13 +39,14 @@ Cell cells[9][9];
 -(void)writeToFile:(NSString*)path{
     
 }
+
 -(void)freshGame:(NSString*)puzzleString{
     int n = 0;
     for (int row = 0; row < 9; row++) {
         for (int col = 0; col < 9; col++) {
             const unichar c = [puzzleString characterAtIndex:n++];
             if('1' <= c && c <= '9'){
-                cells[row][col].number = c;
+                cells[row][col].number = c - '0';
                 cells[row][col].isFixed = YES;
             }else{
                 cells[row][col].number = 0;
@@ -69,7 +70,7 @@ Cell cells[9][9];
 }
 
 -(BOOL)isConflictingEntryAtRow:(int)r Column:(int)c{
-    if (cells[r][c].isFixed == NO)
+    if (cells[r][c].isFixed == YES)
         return NO;
     
     const int number = cells[r][c].number;

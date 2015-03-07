@@ -53,6 +53,9 @@
 }
 
 - (void)drawRect:(CGRect)rect {
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    SudokuPuzzle *puzzle = appDelegate.sudokuPuzzle;
+    
     // Drawing code
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -67,8 +70,6 @@
     for(int row = 0; row < 3; row++){
         for(int col = 0; col < 3; col++){
             CGContextStrokeRect(context, CGRectMake(boardSquare.origin.x + col*squareSize, boardSquare.origin.y + row*squareSize, squareSize, squareSize));
-            
-
         }
     }
     
@@ -78,12 +79,51 @@
     for(int row = 0; row < 9; row++){
         for(int col = 0; col < 9; col++){
             CGContextStrokeRect(context, CGRectMake(boardSquare.origin.x + col*smallSquareSize, boardSquare.origin.y + row*smallSquareSize, smallSquareSize, smallSquareSize));
-            
-            
         }
     }
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor blackColor]};
+    NSDictionary *conAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor redColor]};
+    NSDictionary *fixAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor colorWithRed:0.0 green:90/255.0 blue:1 alpha:1]};
+    NSDictionary *penAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor blackColor]};
+    
+    for(int row = 0; row < 9; row++){
+        for(int col = 0; col < 9; col++){
+            const NSString *text;
+            const int number = [puzzle numberAtRow:row Column:col];
+            if (number > 0){
+                text = [NSString stringWithFormat:@"%d", [puzzle numberAtRow:row Column:col]];
+                const CGSize textSize = [text sizeWithAttributes:attributes];
+                const CGFloat x = boardSquare.origin.x + col*smallSquareSize + 0.5*(smallSquareSize - textSize.width);
+                const CGFloat y = boardSquare.origin.y + row*smallSquareSize + 0.5*(smallSquareSize - textSize.height);
+                const CGRect textRect = CGRectMake(x, y, textSize.width, textSize.height);
+                if ([puzzle isConflictingEntryAtRow:row Column:col])
+                    [text drawInRect:textRect withAttributes:conAttributes];
+                else if([puzzle numberIsFixedAtRow:row Column:col])
+                    [text drawInRect:textRect withAttributes:fixAttributes];
+                else
+                    [text drawInRect:textRect withAttributes:attributes];
+            }
+            else if([puzzle anyPencilsSetAtRow:row Column:col]){
+                for(int penRow = 0; penRow < 3; penRow++) {
+                    for (int penCol = 0; penCol < 3; penCol++) {
+                        const int pencilValue = penCol + 3*penRow + 1;
+                        if ([puzzle isSetPencil:pencilValue AtRow:row Column:col]) {
+                            text = [NSString stringWithFormat:@"%d", pencilValue];
+                            const CGSize textSize = [text sizeWithAttributes:penAttributes];
+                            const CGFloat x = boardSquare.origin.x + col*smallSquareSize +penCol*smallSquareSize/3 + 0.5*(smallSquareSize/3 - textSize.width);
+                            const CGFloat y = boardSquare.origin.y + row*smallSquareSize +penRow*smallSquareSize/3 + 0.5*(smallSquareSize/3 - textSize.height);
+                            const CGRect textRect = CGRectMake(x, y, textSize.width, textSize.height);
+                            [text drawInRect:textRect withAttributes:penAttributes];
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     if(_selectedCol >= 0 && _selectedRow >= 0){
-        CGContextSetRGBFillColor(context, 0.9, 0.9, 0.9, 0.5);
+        CGContextSetRGBFillColor(context, 0.0, 90/255.0, 1.0, 0.75);
         CGContextFillRect(context, CGRectMake(boardSquare.origin.x + _selectedCol*smallSquareSize, boardSquare.origin.y + _selectedRow*smallSquareSize, smallSquareSize, smallSquareSize));
     }
 }
