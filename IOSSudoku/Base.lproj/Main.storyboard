@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,10 +27,14 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp1-iV-h5i">
                                                 <rect key="frame" x="138" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822395956486" green="1" blue="0.97258656115385123" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="2" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="130" y="19" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNU-ed-y1L"/>
                                                 </connections>
@@ -37,10 +42,14 @@
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uor-Sy-rog">
                                                 <rect key="frame" x="221" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="3" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="213" y="19" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhd-LU-aKc"/>
                                                 </connections>
@@ -48,10 +57,14 @@
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmN-Ph-hxX">
                                                 <rect key="frame" x="304" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="4" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="296" y="19" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="032-aD-z5N"/>
                                                 </connections>
@@ -59,10 +72,14 @@
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V8-gU-ec2">
                                                 <rect key="frame" x="387" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="5" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="379" y="19" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMd-gL-n5O"/>
                                                 </connections>
@@ -70,10 +87,14 @@
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1It-c7-8Br">
                                                 <rect key="frame" x="55" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="6" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="47" y="102" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26k-xI-jCK"/>
                                                 </connections>
@@ -81,10 +102,14 @@
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-VC-vqw">
                                                 <rect key="frame" x="55" y="86" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="1" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="47" y="19" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ody-uV-CSQ"/>
                                                 </connections>
@@ -92,10 +117,14 @@
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-my-bra">
                                                 <rect key="frame" x="221" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="8" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="213" y="102" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PO-yb-ese"/>
                                                 </connections>
@@ -103,10 +132,14 @@
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9J-qM-r3u">
                                                 <rect key="frame" x="304" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="9" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="296" y="102" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9U-pN-9TU"/>
                                                 </connections>
@@ -118,6 +151,10 @@
                                                 <state key="normal" title="✖︎" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="462" y="19" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkg-hd-98h"/>
                                                 </connections>
@@ -129,6 +166,10 @@
                                                 <state key="normal" title="⌘" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="462" y="102" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="menuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0c6-CK-fAG"/>
                                                 </connections>
@@ -136,10 +177,14 @@
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-NK-D77">
                                                 <rect key="frame" x="138" y="169" width="75" height="75"/>
                                                 <color key="backgroundColor" red="0.99513822399999996" green="1" blue="0.97258656119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="7" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="130" y="102" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePl-Mk-uLV"/>
                                                 </connections>
@@ -151,6 +196,10 @@
                                                 <state key="normal" title="✏︎" backgroundImage="buttonbackground">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <rect key="frame" x="379" y="102" width="75" height="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SnO-nc-Mrg"/>
                                                 </connections>
@@ -182,16 +231,26 @@
                                                 <exclude reference="VPs-gZ-qHr"/>
                                             </mask>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="0Xo-BW-9sg"/>
+                                                <exclude reference="VPs-gZ-qHr"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="tapGestureRecognizer" destination="uDb-ed-dFa" id="tcp-1X-xWb"/>
                                         </connections>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.65151515151515149" green="0.65151515151515149" blue="0.65151515151515149" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="e7K-eD-gue" firstAttribute="height" secondItem="JQL-Dh-VYn" secondAttribute="height" multiplier="0.75" id="0Kn-aC-Ofo"/>
                                     <constraint firstItem="Kon-VQ-pJh" firstAttribute="leading" secondItem="e7K-eD-gue" secondAttribute="trailing" id="0up-Lh-X3A"/>
                                     <constraint firstItem="e7K-eD-gue" firstAttribute="leading" secondItem="JQL-Dh-VYn" secondAttribute="leading" id="9jT-XO-cS1"/>
+                                    <constraint firstAttribute="centerX" secondItem="e7K-eD-gue" secondAttribute="centerX" id="QtK-th-lCi"/>
                                     <constraint firstItem="Kon-VQ-pJh" firstAttribute="leading" secondItem="JQL-Dh-VYn" secondAttribute="leading" id="ggS-8Y-ddP"/>
+                                    <constraint firstAttribute="centerX" secondItem="Kon-VQ-pJh" secondAttribute="centerX" id="hSd-qC-jgh"/>
+                                    <constraint firstItem="e7K-eD-gue" firstAttribute="width" secondItem="Kon-VQ-pJh" secondAttribute="width" id="nSm-Bc-qZN"/>
                                     <constraint firstItem="Kon-VQ-pJh" firstAttribute="top" secondItem="JQL-Dh-VYn" secondAttribute="top" id="ppb-S4-Zjt"/>
                                     <constraint firstAttribute="bottom" secondItem="Kon-VQ-pJh" secondAttribute="bottom" id="r8V-UB-2yL"/>
                                     <constraint firstItem="Kon-VQ-pJh" firstAttribute="top" secondItem="e7K-eD-gue" secondAttribute="bottom" id="s9p-xr-ZPI"/>
@@ -202,8 +261,12 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="0Kn-aC-Ofo"/>
+                                        <exclude reference="QtK-th-lCi"/>
+                                        <exclude reference="nSm-Bc-qZN"/>
                                         <exclude reference="t9G-Jd-sfJ"/>
                                         <exclude reference="0up-Lh-X3A"/>
+                                        <exclude reference="hSd-qC-jgh"/>
                                         <exclude reference="ppb-S4-Zjt"/>
                                     </mask>
                                 </variation>
@@ -215,6 +278,18 @@
                                         <exclude reference="ggS-8Y-ddP"/>
                                         <include reference="ppb-S4-Zjt"/>
                                         <exclude reference="s9p-xr-ZPI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="0Kn-aC-Ofo"/>
+                                        <exclude reference="9jT-XO-cS1"/>
+                                        <include reference="QtK-th-lCi"/>
+                                        <include reference="nSm-Bc-qZN"/>
+                                        <exclude reference="xS0-iK-2Dd"/>
+                                        <exclude reference="ggS-8Y-ddP"/>
+                                        <include reference="hSd-qC-jgh"/>
+                                        <exclude reference="wcA-VD-wPM"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -242,7 +317,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="305" y="417"/>
+            <point key="canvasLocation" x="304.5" y="417"/>
         </scene>
     </scenes>
     <resources>

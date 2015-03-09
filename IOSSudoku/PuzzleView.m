@@ -21,7 +21,7 @@
 - (IBAction)handleFingerTap:(UIGestureRecognizer*)sender{
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     SudokuPuzzle *puzzle = appDelegate.sudokuPuzzle;
-    const CGPoint tapPoint = [sender locationInView:sender.view];
+    const CGPoint tapPoint = [sender locationInView:self];
     const CGRect boardSquare = [self boardRect];
     const CGFloat squareSize = boardSquare.size.width/9;
     const int row = (tapPoint.y - boardSquare.origin.y)/squareSize;
@@ -66,7 +66,15 @@
     CGContextStrokeRect(context, boardSquare);
     CGContextSetRGBFillColor(context, 0, 0, 0, 1);
     
+    const CGFloat smallSquareSize = boardSquare.size.width/9;
     const CGFloat squareSize = boardSquare.size.width/3;
+    
+    if(_selectedCol >= 0 && _selectedRow >= 0){
+        CGContextSetRGBFillColor(context, 0.0, 90/255.0, 1.0, 0.75);
+        CGContextFillRect(context, CGRectMake(boardSquare.origin.x + _selectedCol*smallSquareSize, boardSquare.origin.y + _selectedRow*smallSquareSize, smallSquareSize, smallSquareSize));
+    }
+    
+
     for(int row = 0; row < 3; row++){
         for(int col = 0; col < 3; col++){
             CGContextStrokeRect(context, CGRectMake(boardSquare.origin.x + col*squareSize, boardSquare.origin.y + row*squareSize, squareSize, squareSize));
@@ -74,8 +82,7 @@
     }
     
     CGContextSetLineWidth(context, 1);
-    
-    const CGFloat smallSquareSize = boardSquare.size.width/9;
+
     for(int row = 0; row < 9; row++){
         for(int col = 0; col < 9; col++){
             CGContextStrokeRect(context, CGRectMake(boardSquare.origin.x + col*smallSquareSize, boardSquare.origin.y + row*smallSquareSize, smallSquareSize, smallSquareSize));
@@ -120,11 +127,6 @@
                 }
             }
         }
-    }
-    
-    if(_selectedCol >= 0 && _selectedRow >= 0){
-        CGContextSetRGBFillColor(context, 0.0, 90/255.0, 1.0, 0.75);
-        CGContextFillRect(context, CGRectMake(boardSquare.origin.x + _selectedCol*smallSquareSize, boardSquare.origin.y + _selectedRow*smallSquareSize, smallSquareSize, smallSquareSize));
     }
 }
 

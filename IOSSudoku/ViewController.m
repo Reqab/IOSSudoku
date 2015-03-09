@@ -92,6 +92,14 @@
                                                           }
                                                           [self.puzzleView setNeedsDisplay];}]];
     
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
+        const NSInteger menuButtonTag = 12;
+        UIButton *menuButton = (UIButton *)[self.buttonView viewWithTag:menuButtonTag];
+        popPresenter.sourceView = menuButton;
+        popPresenter.sourceRect = menuButton.bounds;
+    }
+    
     [self presentViewController:alertController animated:YES completion:^{}];
 }
 
@@ -113,6 +121,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    SudokuPuzzle *puzzle = appDelegate.sudokuPuzzle;
+    
+    [puzzle freshGame:[appDelegate randomHardGame]];
+    [self.puzzleView setNeedsDisplay];
 }
 
 - (void)didReceiveMemoryWarning {
