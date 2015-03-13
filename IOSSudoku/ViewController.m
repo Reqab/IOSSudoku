@@ -121,11 +121,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    SudokuPuzzle *puzzle = appDelegate.sudokuPuzzle;
-    
-    [puzzle freshGame:[appDelegate randomHardGame]];
-    [self.puzzleView setNeedsDisplay];
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,14 +9,16 @@
 #import "SudokuPuzzle.h"
 
 typedef struct{
-    char number;
+    int number;
     BOOL isFixed;
     short pencilMark;
 } Cell;
 
-@implementation SudokuPuzzle
+@implementation SudokuPuzzle{
 
 Cell cells[9][9];
+
+}
 
 -(instancetype)init{
     if(self = [super init]){
@@ -32,11 +34,30 @@ Cell cells[9][9];
 }
 
 -(instancetype)initWithContentsOfFile:(NSString*)path{
-    
-    return nil;
+    if(self = [super init]){
+        NSArray *cellCopy = [[NSArray alloc] initWithContentsOfFile:path];
+        for(int row = 0; row < 9; row++){
+            for(int col = 0; col < 9; col++){
+                NSDictionary *dict = cellCopy[row*9 + col];
+                cells[row][col].number = [[dict objectForKey:@"number"] intValue];
+                cells[row][col].isFixed = [[dict objectForKey:@"isFixed"] boolValue];
+                cells[row][col].pencilMark = [[dict objectForKey:@"pencilMark"] intValue];
+            }
+        }
+    }
+    return self;
 }
 
 -(void)writeToFile:(NSString*)path{
+    NSMutableArray *cellCopy = [[NSMutableArray alloc] init];
+    for(int row = 0; row < 9; row++){
+        for(int col = 0; col < 9; col++){
+            [cellCopy addObject:@{@"number" : @(cells[row][col].number),
+                                  @"isFixed" : @(cells[row][col].isFixed),
+                                  @"pencilMark" : @(cells[row][col].pencilMark)}];
+        }
+    }
+    [cellCopy writeToFile:path atomically:YES];
     
 }
 

@@ -16,6 +16,7 @@
 
 - (NSString*)randomSimpleGame;
 - (NSString*)randomHardGame;
+-(NSString*)sandBoxFileName;
 
 @end
 

@@ -70,7 +70,7 @@
     const CGFloat squareSize = boardSquare.size.width/3;
     
     if(_selectedCol >= 0 && _selectedRow >= 0){
-        CGContextSetRGBFillColor(context, 0.0, 90/255.0, 1.0, 0.75);
+        CGContextSetRGBFillColor(context, 0.0, 0.0, 0.0, 0.25);
         CGContextFillRect(context, CGRectMake(boardSquare.origin.x + _selectedCol*smallSquareSize, boardSquare.origin.y + _selectedRow*smallSquareSize, smallSquareSize, smallSquareSize));
     }
     
@@ -89,10 +89,10 @@
         }
     }
     
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor blackColor]};
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor colorWithRed:0.0 green:90/255.0 blue:1 alpha:1]};
     NSDictionary *conAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor redColor]};
-    NSDictionary *fixAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor colorWithRed:0.0 green:90/255.0 blue:1 alpha:1]};
-    NSDictionary *penAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor blackColor]};
+    NSDictionary *fixAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:30], NSForegroundColorAttributeName: [UIColor blackColor]};
+    NSDictionary *penAttributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor colorWithRed:0.0 green:90/255.0 blue:1 alpha:1]};
     
     for(int row = 0; row < 9; row++){
         for(int col = 0; col < 9; col++){
